@@ -5,9 +5,6 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from openai import OpenAI
 from textblob import TextBlob
 
-# Set your API keys here
-OPENAI_API_KEY = "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"
-YOUTUBE_API_KEY = "AIzaSyBVSiOrjcKA0z4-xcJknBJeGpd7b2Eoaj4"
 
 # Initialize the OpenAI client
 openai_client = OpenAI(api_key=OPENAI_API_KEY)
