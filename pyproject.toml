@@ -5,6 +5,9 @@ description = ""
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
+python-dotenv = "^1.0.0"
+
+[tool.poetry.dependencies]
 python = ">=3.10.0,<3.12"
 openai = "^1.33.0"
 streamlit = "^1.35.0"

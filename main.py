@@ -4,6 +4,25 @@ from googleapiclient.discovery import build
 from youtube_transcript_api import YouTubeTranscriptApi
 from openai import OpenAI
 from textblob import TextBlob
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+
+# Getting the API keys from environment variables
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
+
+# Initialize the OpenAI client
+openai_client = OpenAI(api_key=OPENAI_API_KEY)
+
+# Initialize the YouTube API client
+youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
+
+# ... rest of your code
+
 
 
 # Initialize the OpenAI client
